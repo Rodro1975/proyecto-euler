@@ -1,0 +1,1678 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    color: #1C3259;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+ul {
+    list-style: none;
+    font-size: 1.25em;
+}
+
+button {
+    margin-top: 120px;
+    padding: 10px 30px !important;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: #325AA3;
+    font-size: 1.5em;
+    color: #F7C704;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1C3259;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-image: linear-gradient(to left, #1C3259, #7BA1E4);
+
+}
+
+
+header img {
+    transform: scale(.5);
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #D73530;
+    max-width: 2000px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    color: #F7C704;
+}
+
+header a:hover {
+    color: #D73530;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(images/termoElectrica.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero h1 {
+    color: #1C3259;
+    text-shadow: 1px 1px 0 #F7C704;
+    font-size: 7vw;
+}
+
+#hero button {
+    font-size: 1.95em;
+}
+
+#hero h2 {
+    color: #7BA1E4;
+    text-shadow: none;
+    font-size: 1em;
+}
+
+/*estilos galeria inicio*/
+
+#nuestros-servicios h1 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#nuestros-servicios {
+    text-align: center;
+}
+
+/* Estilos para las cartas de servicios */
+.cartas {
+    background-position: top center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Alinea los elementos al centro horizontalmente */
+}
+
+/* Estilos para los botones de información */
+.cartas button {
+    margin-top: 20px;
+    /* Reduzco el margen superior para ajustar mejor la alineación */
+    padding: 10px 20px;
+    /* Ajusto el padding del botón */
+}
+
+/* Estilos para el contenedor de texto y botones */
+.cartas-content {
+    margin-bottom: 20px;
+    /* Agrego un margen inferior para separar las cartas */
+}
+
+#nuestros-servicios .container {
+    padding: 100px 12px;
+}
+
+#nuestros-servicios p {
+
+    color: azure;
+}
+
+#nuestros-servicios h2 {
+    color: #7BA1E4;
+    text-align: right;
+}
+
+#nuestros-servicios h2 span {
+    color: #F7C704;
+    font-size: 100px;
+}
+
+#nuestros-servicios .cartas {
+    background-position: top center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.cartas:first-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(images/galeriaAutomotriz.png);
+
+}
+
+.cartas:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(images/galeriaElectricidad.png);
+
+}
+
+.cartas:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(images/galeriaHerramientas.png);
+
+}
+
+.cartas:nth-child(4) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(images/galeriaIngenieria.png);
+
+}
+
+/*estilos clientes inicio*/
+
+#nuestros-clientes {
+    background-color: #7BA1E409;
+}
+
+#nuestros-clientes .container {
+    padding: 200px 12px;
+}
+
+#nuestros-clientes h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.clientes {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas */
+    grid-gap: 20px;
+    /* Espacio entre las cajas */
+}
+
+.cajas {
+    width: 150px;
+    /* Ancho fijo de las cajas */
+    height: 150px;
+    /* Altura fija de las cajas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    /* Efecto de sombra */
+    border: 1px solid #D73530;
+    /* Borde rojo */
+    border-radius: 5px;
+    /* Borde redondeado */
+    overflow: hidden;
+    /* Oculta el contenido que sobresale */
+}
+
+.cajas img {
+    width: 90%;
+    /* Ancho máximo de las imágenes */
+    height: 90%;
+    /* Altura máxima de las imágenes */
+    object-fit: contain;
+    /* Ajusta la imagen dentro del contenedor */
+}
+
+/*estilos caracteristicas inicio*/
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#caracteristicas .container img {
+    width: 100%;
+    /* Ajusta el ancho de la imagen al 100% del contenedor */
+    max-width: 350px;
+    /* Establece un ancho máximo para la imagen */
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    display: block;
+    /* Hace que la imagen se comporte como un bloque */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+    border-radius: 8px;
+    /* Agrega bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* Agrega una sombra */
+    margin-top: 24px;
+}
+
+
+#caracteristicas li {
+    margin: 21px 0;
+    font-weight: bold;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #7BA1E409;
+    height: 80vh;
+}
+
+#final h2 {
+    font-size: 5vw;
+}
+
+#final button {
+    font-size: 1.5vw;
+}
+
+footer {
+    border-top: 2px solid #D73530;
+    max-width: 2000px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Alinea verticalmente los elementos */
+    background-image: linear-gradient(to left, #1C3259, #7BA1E4);
+    background-position: top center;
+}
+
+footer img {
+    transform: scale(.5);
+}
+
+footer .container {
+    text-align: center;
+    color: azure;
+    font-size: 1em;
+}
+
+.links ul li a {
+    color: azure;
+}
+
+.links ul li a:hover {
+    color: #D73530;
+}
+
+/*ESTILOS PARA LA PAGINA SERVICIOS*/
+/*estilos para el banner*/
+
+
+#servicios h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+#servicios h1 span {
+    color: #F7C704;
+    font-size: 100px;
+}
+
+#servicios p {
+    text-align: center;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    /* Los elementos se mostrarán en columna */
+    background-color: #1C3259;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px #F7C704;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.banner p {
+    font-size: 40px;
+    color: #D73530;
+    display: flex;
+    justify-content: space-between;
+    /* Alinea los elementos del párrafo en las extremidades */
+    align-items: center;
+    /* Centra verticalmente los elementos del párrafo */
+    margin-bottom: 40px;
+    /* Añade espacio entre los párrafos */
+    flex-grow: 1;
+    /* El párrafo ocupará la mitad del ancho del banner */
+}
+
+.banner p span {
+    color: #7BA1E4;
+    font-size: 16px;
+    text-align: right;
+    flex-grow: 1;
+    /* El span ocupará la otra mitad del ancho del banner */
+}
+
+
+/*estilos seccion nuestros-negocios*/
+#nuestros-negocios {
+    background-color: #7BA1E409;
+
+}
+
+#nuestros-negocios .container h2 {
+    text-align: center;
+
+}
+
+#nuestros-negocios .container h2 span {
+    color: #F7C704;
+    font-size: 100px;
+}
+
+/* Estilos para la sección nuestros-negocios */
+#nuestros-negocios {
+    background-color: #7BA1E409;
+}
+
+#nuestros-negocios .container {
+    display: flex;
+    flex-direction: column;
+    /* Los elementos se mostrarán en columna */
+    align-items: center;
+    /* Alinea los elementos al centro horizontalmente */
+    text-align: center;
+    /* Alinea el texto al centro */
+}
+
+.container .serv-1,
+.container .serv-3,
+.container .serv-5 {
+    display: flex;
+    flex-direction: column;
+    /* Los elementos se mostrarán en columna */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    margin-bottom: 20px;
+    /* Agrega espacio entre los contenedores */
+    padding: 20px;
+    /* Añade un poco de espacio interno */
+    background-color: #ffffff;
+    /* Color de fondo blanco */
+    border-radius: 15px;
+    /* Borde redondeado */
+    box-shadow: 2px 2px 10px #325AA3;
+}
+
+.container .serv-2,
+.container .serv-4,
+.container .serv-6 {
+    display: flex;
+    flex-direction: column;
+    /* Los elementos se mostrarán en columna */
+    text-align: right;
+    /* Alinea el texto a la derecha */
+    margin-bottom: 20px;
+    /* Agrega espacio entre los contenedores */
+    padding: 20px;
+    /* Añade un poco de espacio interno */
+    background-color: #ffffff;
+    /* Color de fondo blanco */
+    border-radius: 15px;
+    /* Borde redondeado */
+    box-shadow: 2px 2px 10px #7BA1E4;
+}
+
+/* Estilos para las imágenes */
+.container .serv-1 img,
+.container .serv-3 img,
+.container .serv-5 img,
+.container .serv-2 img,
+.container .serv-4 img,
+.container .serv-6 img {
+    width: 100%;
+    /* Ajusta el ancho de la imagen al 100% del contenedor */
+    border-radius: 10px;
+    /* Borde redondeado */
+    margin-top: 20px;
+    /* Espacio entre el texto y la imagen */
+}
+
+/*estilos seccion servicios-final*/
+/* Estilos para la sección servicios-final */
+#final-servicios .container {
+    text-align: center;
+    /* Alinea el texto al centro */
+    margin-bottom: 40px;
+}
+
+/* Estilos para el botón "Preguntame" */
+#final-servicios button {
+    width: 100%;
+    /* Ancho igual al 100% del contenedor */
+    padding: 0.5em 1em;
+    /* Tamaño del padding del botón */
+    font-size: 1em;
+    /* Tamaño de la fuente del botón */
+}
+
+
+
+
+
+/*ESTILOS PAGINA AUTOMOTRIZ*/
+/*estilos carrusel autos*/
+/*carrusel*/
+#hero-auto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+#hero-auto {
+    font-size: 18px;
+}
+
+#hero-auto h2 {
+    font-size: 2.7em;
+    margin-bottom: 40px;
+}
+
+#hero-auto h2 span {
+    color: #F7C704;
+    font-size: 100px;
+}
+
+#hero-auto {
+    margin-top: 40px;
+}
+
+#hero-auto h3 {
+    margin-top: 80px;
+}
+
+#hero-auto h3 a {
+    color: #16ce44;
+    font-weight: bold;
+    font-size: 80px;
+}
+
+#hero-auto h3 a:hover {
+    color: #0e862c;
+}
+
+#automotriz {
+    text-align: center;
+    background-color: #7BA1E409;
+}
+
+#automotriz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrar horizontalmente */
+}
+
+.legend {
+    font-weight: bold;
+
+}
+
+.grid img {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+    object-fit: contain;
+    /* Mantener la proporción de la imagen sin distorsionar */
+    border: 2px solid #D73530;
+    box-shadow: 2px 2px 10px #1C3259;
+
+}
+
+/* estilos de contenedor motores a gasolina */
+
+#refacciones {
+    margin-bottom: 40px;
+
+}
+
+#servicio-automotriz {
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-automotriz {
+    width: 90%;
+    max-width: 300px;
+    /* Ajusta el máximo ancho de la caja según sea necesario */
+    margin: 0 auto;
+    /* Centra la caja horizontalmente */
+    border: 2px solid #D73530;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho y alto */
+    display: flex;
+    /* Utiliza flexbox para organizar el contenido en columna */
+    flex-direction: column;
+    /* Coloca los elementos en una columna */
+    border-radius: 15px;
+    margin-top: 40px;
+    box-shadow: 2px 2px 12px #1C3259;
+}
+
+.texto {
+    width: 100%;
+    margin-bottom: 20px;
+    /* Espacio entre el texto y las imágenes */
+}
+
+.texto span {
+    color: #F7C704;
+    font-size: 100px;
+}
+
+.imagenes {
+    width: 100%;
+}
+
+.imagenes img {
+    width: 100%;
+    display: block;
+    /* Asegura que las imágenes se muestren como bloques separados */
+    margin-bottom: 10px;
+    /* Espacio entre las imágenes */
+}
+
+h3 {
+    margin-top: 20px;
+    /* Espacio entre las imágenes y el título */
+    color: #7BA1E4;
+}
+
+/*estilos para la seccion de refacciones*/
+
+#refacciones {
+    background-color: #7BA1E409;
+}
+
+.refacciones-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.refacciones-container h2 {
+    font-size: 2em;
+}
+
+
+.nuestras-refac {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas */
+    grid-gap: 20px;
+    /* Espacio entre las cajas */
+}
+
+.cajas-auto {
+    width: 150px;
+    /* Ancho fijo de las cajas */
+    height: 150px;
+    /* Altura fija de las cajas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    /* Efecto de sombra */
+    border: 2px solid #D73530;
+    /* Borde rojo */
+    border-radius: 5px;
+    /* Borde redondeado */
+    overflow: hidden;
+    /* Oculta el contenido que sobresale */
+}
+
+.cajas-auto img {
+    width: 90%;
+    /* Ancho máximo de las imágenes */
+    height: 90%;
+    /* Altura máxima de las imágenes */
+    object-fit: contain;
+    /* Ajusta la imagen dentro del contenedor */
+}
+
+/*estilos de la seccion maps*/
+#maps {
+    margin-top: 40px;
+    /* Margen superior */
+    margin-bottom: 90px;
+    /* Margen inferior */
+    text-align: center;
+    /* Alinea el contenido al centro */
+}
+
+#maps-container {
+    max-width: 300px;
+    /* Ancho máximo */
+    margin: 0 auto;
+    /* Centra horizontalmente */
+
+}
+
+#maps-container h3 {
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+#maps-container a {
+    color: #7BA1E4;
+}
+
+#maps-container a:hover {
+    color: #F7C704;
+}
+
+#maps img {
+    max-width: 100%;
+    /* Para que la imagen se ajuste al ancho máximo del contenedor */
+    height: auto;
+    /* Para mantener la proporción */
+    border-radius: 10px;
+    /* Borde redondeado */
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    /* Gradiente blanco */
+}
+
+.box-maps {
+    background-image: linear-gradient(to left, #1C3259, #7BA1E4);
+    border: 2px solid #D73530;
+}
+
+/*aqui los estilos de politicas y privacidad*/
+/**/
+#politicas {
+    background-color: #7BA1E409;
+}
+
+#hero-priv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.privacidad-container {
+    font-size: 55px;
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    margin-bottom: 40px;
+    /* Agregar margen inferior de 40px */
+}
+
+.priv-container h2 span {
+    color: #F7C704;
+    font-size: 130px;
+}
+
+.privacidad-1 p {
+    font-size: 35px;
+    color: #325AA3;
+}
+
+.politicas {
+    text-align: center;
+}
+
+.container.politicas {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: justify;
+}
+
+.container.politicas section {
+    margin-bottom: 30px;
+}
+
+.container.politicas h2 {
+    font-size: 24px;
+    color: #1C3259;
+    margin: 30px 0 20px;
+}
+
+.container.politicas h3 {
+    font-size: 20px;
+    color: #1C3259;
+    margin: 25px 0 15px;
+}
+
+.container.politicas p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.container.politicas ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.container.politicas ul li {
+    margin-bottom: 10px;
+}
+
+/* Limitar el ancho del contenido */
+.container.politicas {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilos para la pagina nuestra empresa */
+/* Estilos para la pagina acercade */
+#acercade-container {
+    text-align: center;
+}
+
+.acercade-titulo span {
+    color: #F7C704;
+    font-size: 130px;
+}
+
+.acercade-titulo h1 {
+    font-size: 3em;
+
+}
+
+.acercade-titulo p {
+    font-size: 20px;
+    color: #325AA3;
+}
+
+/* Estilos para la cuadrícula de imágenes */
+.Acercade {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 20px));
+    /* Divide el contenedor en 2 columnas con un 20% de reducción */
+    gap: 20px;
+    /* Espacio entre las imágenes */
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    width: 80%;
+    /* Reduce el ancho del contenedor en un 20% */
+    margin: 40px auto;
+    /* Margen de 40px arriba y abajo, y centra el contenedor horizontalmente */
+    position: relative;
+    /* Establece una posición relativa para el contenedor */
+}
+
+.Acercade img {
+    width: 100%;
+    /* Ajusta el tamaño de las imágenes al ancho del contenedor */
+    max-width: 100%;
+    /* Asegura que las imágenes no se salgan del contenedor */
+    height: auto;
+    /* Mantiene la proporción de aspecto de las imágenes */
+}
+
+/* Estilos para el margen en movimiento */
+.margen {
+    position: absolute;
+    /* Establece una posición absoluta para el margen */
+    top: 0;
+    /* Margen superior cero para alinear con el contenedor */
+    left: 0;
+    /* Margen izquierdo cero para alinear con el contenedor */
+    width: calc(100% - 80px);
+    /* Ancho igual al 100% menos el doble del margen (40px a cada lado) */
+    height: calc(100% - 80px);
+    /* Altura igual al 100% menos el doble del margen (40px arriba y abajo) */
+    border: 10px solid #F7C704;
+    /* Borde azul para el margen */
+    border-radius: 10px;
+    /* Borde redondeado para el margen */
+    animation: moverMargen 4s infinite alternate;
+    /* Animación del margen */
+}
+
+/* Animación del margen */
+@keyframes moverMargen {
+    from {
+        transform: translate(-10px, -10px);
+        /* Inicio de la animación: margen movido 10px hacia arriba y hacia la izquierda */
+    }
+
+    to {
+        transform: translate(10px, 10px);
+        /* Fin de la animación: margen movido 10px hacia abajo y hacia la derecha */
+    }
+}
+
+#somos {
+    background-color: #7BA1E409;
+}
+
+/* Estilos de herramientas  */
+
+/* Estilos  de herramientas  */
+
+#hero-ferre {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.texto-ferre span {
+    color: #F7C704;
+    font-size: 100px;
+}
+
+/* Estilos  de imágenes de herramientas */
+#productos{
+    background-color: #7BA1E409;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+#productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mosaico responsivo */
+    gap: 20px;
+}
+
+.producto {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #1C3259;
+    box-shadow: 2px 2px 10px #F7C704;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.producto h3 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+    padding: 5px;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+/*estilos final ferreteria*/
+/* Estilos para dispositivos móviles */
+#final-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(28, 50, 89, 0.5);
+    /* Agrega la sombra */
+}
+
+.texto-final {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente los elementos */
+}
+
+.texto-final p {
+    margin-left: 10px;
+    /* Ajusta el margen izquierdo del texto */
+}
+
+.icono-final a {
+    color: #7BA1E4;
+    /* Color predeterminado del icono */
+    text-decoration: none;
+    /* Quita el subrayado del enlace */
+}
+
+.icono-final a:hover {
+    color: #F7C704;
+    /* Cambia el color del icono cuando el cursor pasa sobre él */
+}
+
+/*ESTILOS PAGINA CONTACTO*/
+#formulario {
+    background-color: #7BA1E409;
+    margin-top: 40px;
+    /* Margen superior de la sección */
+    margin-bottom: 90px;
+    /* Margen inferior de la sección */
+}
+
+/*estilos para hero-contact*/
+#hero-contact {
+    text-align: center;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+}
+
+.texto-contact span {
+    font-size: 100px;
+    color: #F7C704;
+}
+
+/* Estilos para el formulario de la página contacto */
+#form-container {
+    max-width: 500px;
+    margin: 0px auto;
+    /* Agregamos un margen superior e inferior y centramos horizontalmente */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Quitamos el margen superior y reducimos el inferior */
+    color: #1C3259;
+}
+
+form {
+    /* Cambiamos el display a flex y ajustamos la dirección para que los elementos se apilen verticalmente */
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #1C3259;
+    margin-bottom: 5px;
+    /* Agregamos un pequeño margen inferior para separar las etiquetas de los campos de entrada */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 22px);
+    /* Ajustamos el ancho para considerar el borde */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+    /* Agregamos un margen inferior a los campos de entrada */
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Estilos para el botón dentro del formulario */
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    /* Ajustamos el ancho del botón al 25% */
+    background-color: #1C3259;
+    /* Color de fondo azul */
+    color: #F7C704;
+    /* Color de texto blanco */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Borde redondeado */
+    padding: 10px;
+    /* Espaciado interno */
+    font-size: 16px;
+    /* Tamaño de fuente */
+    cursor: pointer;
+    /* Cursor de puntero */
+    transition: background-color 0.3s;
+    /* Transición suave del color de fondo */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #325AA3;
+    /* Cambio de color al pasar el cursor */
+}
+
+
+/*Estilos container redes sociales*/
+#social-container {
+    margin-top: 40px;
+    /* Agregar margen superior de 40px */
+    display: flex;
+    /* Usa un contenedor flexible para alinear las imágenes */
+    justify-content: center;
+    /* Centra horizontalmente las imágenes */
+    margin-bottom: 40px;
+}
+
+#social-container a {
+    display: inline-block;
+    /* Permite aplicar estilos a los elementos "a" */
+    margin: 0 10px;
+    /* Espacio entre las imágenes */
+    text-decoration: none;
+    /* Elimina la decoración de los enlaces */
+}
+
+#social-container img {
+    width: 70px;
+    /* Define el ancho deseado para las imágenes */
+    height: 70px;
+    /* Define la altura deseada para las imágenes */
+}
+
+footer .developer a {
+    color: #16ce44;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+@media  (min-width:900px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    #hero {
+        margin-top: 90px;
+    }
+
+    #nuestros-clientes h2 {
+        font-size: 5em;
+    }
+
+    #nuestros-clientes .container {
+        justify-content: center;
+    }
+
+    .clientes {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        /* 5 columnas */
+        grid-gap: 20px;
+        /* Espacio entre las cajas */
+    }
+
+    #nuestros-servicios h1 {
+        font-size: 5em;
+    }
+
+    #nuestros-servicios .programas {
+        display: block;
+        justify-content: space-between;
+
+    }
+
+    #caracteristicas .container img {
+        width: 100%;
+        /* Ajusta el ancho de la imagen al 100% del contenedor */
+        max-width: 700px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    footer .container {
+        text-align: center;
+
+    }
+
+    footer .links {
+        flex-grow: 1;
+        text-align: center;
+
+    }
+
+    footer .links ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    footer .links ul li {
+        margin: 0 10px;
+        /* Margen horizontal entre los enlaces */
+
+    }
+
+    footer .aviso-privacidad {
+        text-align: center;
+    }
+
+
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+    }
+
+    /* Anular los estilos de posición fija para dispositivos pequeños */
+    #servicios {
+        margin-top: 240px;
+        /* Ajustar según la altura de la barra de navegación */
+    }
+
+    /* Estilos para el banner */
+    #servicios h1 {
+        font-size: 4em;
+        /* Ajusta el tamaño del título */
+    }
+
+    /* Estilos para los párrafos */
+    .container .text p {
+        padding: 200px;
+        /* Espacio interno de 20px en todos los lados */
+        height: 100%;
+        /* Para ocupar todo el alto del contenedor padre */
+    }
+
+    .banner {
+        flex-direction: row;
+        /* Cambia la dirección de los elementos a fila */
+        padding: 40px;
+        /* Ajusta el padding */
+
+    }
+
+    .banner p {
+        font-size: 70px;
+        /* Ajusta el tamaño del texto */
+        margin-bottom: 0;
+        /* Elimina el margen inferior */
+
+    }
+
+    .banner p span {
+        font-size: 20px;
+        /* Ajusta el tamaño del texto dentro del span */
+        justify-content: space-between;
+        text-align: start;
+    }
+
+    /* Estilos para la sección nuestros-negocios */
+    .container .serv-1,
+    .container .serv-3,
+    .container .serv-5,
+    .container .serv-2,
+    .container .serv-4,
+    .container .serv-6 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 2px 2px 10px #325AA3;
+    }
+
+    .container .serv-1,
+    .container .serv-3,
+    .container .serv-5 {
+        align-items: flex-start;
+    }
+
+    .container .serv-2,
+    .container .serv-4,
+    .container .serv-6 {
+        align-items: flex-end;
+    }
+
+    .container .serv-1 img,
+    .container .serv-3 img,
+    .container .serv-5 img,
+    .container .serv-2 img,
+    .container .serv-4 img,
+    .container .serv-6 img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .serv-text {
+        flex-grow: 1;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .serv-image {
+        flex-shrink: 0;
+        width: 50%;
+        /* Ajusta el ancho de la imagen */
+    }
+
+    #nuestros-negocios .container .text p {
+        order: -1;
+    }
+
+    /* Aplicar flexbox al contenedor principal */
+    .serv-content {
+        display: flex;
+        flex-direction: row;
+        /* Los elementos se ordenarán en una fila */
+        justify-content: space-between;
+        /* Alinea los elementos en los extremos */
+    }
+
+    /* Cambiar el orden del texto */
+    .serv-1 .text {
+        order: 2;
+        /* Párrafo al lado derecho */
+    }
+
+    /* Cambiar el orden de las imágenes */
+
+    .serv-1 .serv-image {
+        order: 1;
+        /* Imágenes al lado izquierdo */
+    }
+
+    .serv-2 .text {
+        order: 1;
+        /* Párrafo al lado derecho */
+    }
+
+    /* Cambiar el orden de las imágenes */
+    .serv-2 .serv-image {
+        order: 2;
+        /* Imágenes al lado izquierdo */
+    }
+
+    .serv-3 .text {
+        order: 2;
+        /* Párrafo al lado derecho */
+    }
+
+    /* Cambiar el orden de las imágenes */
+
+    .serv-3 .serv-image {
+        order: 1;
+        /* Imágenes al lado izquierdo */
+    }
+
+    .serv-4 .text {
+        order: 1;
+        /* Párrafo al lado derecho */
+    }
+
+    /* Cambiar el orden de las imágenes */
+    .serv-4 .serv-image {
+        order: 2;
+        /* Imágenes al lado izquierdo */
+    }
+
+    .serv-5 .text {
+        order: 2;
+        /* Párrafo al lado derecho */
+    }
+
+    /* Cambiar el orden de las imágenes */
+
+    .serv-5 .serv-image {
+        order: 1;
+        /* Imágenes al lado izquierdo */
+    }
+
+    .serv-6 .text {
+        order: 1;
+        /* Párrafo al lado derecho */
+    }
+
+    /* Cambiar el orden de las imágenes */
+    .serv-6 .serv-image {
+        order: 2;
+        /* Imágenes al lado izquierdo */
+    }
+
+    /* Estilos para la sección final de servicios */
+    #final-servicios .container {
+        margin-bottom: 60px;
+        /* Ajusta el margen inferior */
+    }
+
+    /*MEDIA PARA AUTOMOTRIZ*/
+    /* Cambia la dirección de los elementos marcas de autos flexibles a fila */
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        /* Ajusta el ancho máximo del contenedor según sea necesario */
+        margin: 0 auto;
+        /* Centra el contenedor horizontalmente */
+    }
+
+    .grid {
+        flex-direction: row;
+        /* Cambia la dirección a fila */
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan en múltiples líneas */
+        justify-content: space-around;
+        /* Distribuye uniformemente los elementos a lo largo del contenedor */
+        margin: 80px 0;
+        /* Ajusta los márgenes superior e inferior */
+    }
+
+
+    .grid img {
+        margin-bottom: 20px;
+        /* Añade un margen inferior para separar las imágenes */
+        margin-right: 20px;
+        /* Añade un margen derecho entre las imágenes */
+    }
+
+    .legend {
+        text-align: center;
+        /* Centra el texto */
+    }
+
+    .container-automotriz {
+        width: 100%;
+        max-width: 1200px;
+        /* Ajusta el máximo ancho de la caja según sea necesario */
+        margin: 0 auto;
+        /* Centra la caja horizontalmente */
+        border: 2px solid #D73530;
+        padding: 20px;
+        box-sizing: border-box;
+        /* Incluye el padding en el ancho y alto */
+        display: flex;
+        /* Utiliza flexbox para organizar el contenido en fika */
+        flex-direction: row;
+        /* Coloca los elementos en una columna */
+        border-radius: 15px;
+        margin-top: 40px;
+        box-shadow: 2px 2px 12px #1C3259;
+    }
+
+    .container-automotriz {
+        align-items: center;
+    }
+
+    .texto {
+        width: 150%;
+        margin-bottom: 2px;
+        /* Espacio entre el texto y las imágenes */
+    }
+
+    #refacciones .refacciones-container {
+        margin-bottom: 40px;
+        /* Margen inferior de 40px para la sección #refacciones */
+    }
+
+    .nuestras-refac {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        /* 5 columnas */
+        grid-gap: 20px;
+        /* Espacio entre las cajas */
+        margin-left: 110px;
+        /* Margen a la izquierda */
+        margin-bottom: 40px;
+        /* Margen inferior de 40px */
+    }
+
+    /*media queries para acerca de*/
+    #acercade {
+        margin-top: 200px;
+    }
+
+    .acercade-titulo {
+
+        margin-bottom: 120px;
+    }
+
+    /*estilos para ferreteria*/
+
+    #hero-ferre {
+        text-align: center;
+        margin-top: 30vh;
+        margin-bottom: 90px;
+    }
+
+    /*estilos herramientas*/
+
+   
+    /*queries para final ferreteria*/
+    #final-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* Alinea los elementos a los extremos */
+        text-align: left;
+        /* Alinea el texto a la izquierda */
+        align-items: center;
+        /* Centra verticalmente los elementos */
+    }
+
+    .texto-final {
+        width: 70%;
+        /* Ajusta el ancho del contenedor de texto */
+    }
+
+    .texto-final p {
+        margin-left: 20px;
+        /* Añade un margen a la izquierda del texto */
+    }
+
+    .icono-final {
+        width: 30%;
+        /* Ajusta el ancho del icono */
+    }
+
+    #final-container {
+        justify-content: center;
+        /* Centra horizontalmente los elementos */
+        margin-bottom: 40px;
+    }
+
+    /*queries pagina contacto y formulario*/
+    .form-container {
+        width: 500px;
+        /* Ancho fijo para el formulario */
+    }
+
+    .contact-form input[type="submit"] {
+        width: calc(100% - 22px);
+        /* Ajustamos el ancho del botón */
+    }
+
+    /* Estilos para la caja del mapa */
+    .box-maps {
+        text-align: center;
+        /* Centra el contenido horizontalmente */
+        background-color: #F7C704;
+        /* Color de fondo para resaltar el texto */
+        padding: 20px;
+        /* Espaciado interno */
+        border-radius: 10px;
+        /* Borde redondeado */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Sombra */
+    }
+
+    /* Estilos para el título */
+    .box-maps h3 {
+        margin-bottom: 10px;
+        /* Espaciado inferior */
+
+    }
+
+    /* Estilos para el enlace */
+    .box-maps a {
+        color: #1C3259;
+        /* Color del texto del enlace */
+    }
+
+    /* Estilos para la imagen */
+    .box-maps img {
+        display: block;
+        /* Hace que la imagen sea un bloque para centrarla */
+        margin: 0 auto;
+        /* Centra la imagen horizontalmente */
+        max-width: 100%;
+        /* Ajusta el ancho máximo de la imagen */
+        height: auto;
+        /* Para mantener la proporción */
+        margin-top: 10px;
+        /* Espaciado superior */
+    }
+    /*queries herramientas*/
+    #productos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Mosaico responsivo */
+        gap: 20px;
+    }
+
+
+
+}
+
+
+
+
+

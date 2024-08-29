@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/IcoEuler.ico">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <img src="images/logoEuler-sinfondo.png" alt="logo">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="automotriz.html">Automotriz</a>
+                <a href="ferreteria.html">Ferretería</a>
+                <a href="acercade.html">Acerca de</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">Privacidad</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero-ferre">
+        <div id="ferre-container">
+            <div class="texto-ferre">
+                <h2>Comercializadora <span>e</span>uler</h2>
+                <p>Venta de tornillería, material eléctrico y todo tipo de herramientas manuales, automaticas e
+                    inalambricas</p>
+                <form action="contacto.html"><button>¡Haz tu pedido!</button></form>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos">
+        <div class="producto">
+            <img src="images/tornilleria.jpeg" alt="portada">
+            
+        </div>
+        <div class="producto">
+            <img src="images/taladros.jpeg" alt="tornillería">
+            
+        </div>
+        <div class="producto">
+            <img src="images/pulidoras.jpeg" alt="portada">
+            
+        </div>
+        <div class="producto">
+            <img src="images/caladoras.jpeg" alt="tornillería">
+            
+        </div>
+        <div class="producto">
+            <img src="images/materialElectrico.jpeg" alt="portada">
+            
+        </div>
+        <div class="producto">
+            <img src="images/trozadoras.jpeg" alt="tornillería">
+            
+        </div>
+        <div class="producto">
+            <img src="images/lijadoras.jpeg" alt="portada">
+            
+        </div>
+        <div class="producto">
+            <img src="images/pistolas.jpeg" alt="tornillería">
+            
+        </div>
+        <div class="producto">
+            <img src="images/sopladoras.jpeg" alt="portada">
+            
+        </div>
+        <div class="producto">
+            <img src="images/rotomartillos.jpeg" alt="tornillería">
+            
+        </div>
+    </section>
+
+    <section id="final-ferre">
+        <div id="final-container">
+            <div class="texto-final">
+                <div class="icono-final">
+                    <a href="contacto.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
+                            <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+                          </svg>
+                    </a>
+                
+                </div>
+                <p>¡Bienvenido a nuestra tienda de ferretería y material eléctrico, tu destino número uno para todas tus
+                    necesidades de construcción y reparación! Sumérgete en un mundo de posibilidades donde encontrarás
+                    una amplia gama de herramientas de alta calidad, desde destornilladores hasta taladros, y todo lo
+                    que necesitas para tus proyectos eléctricos, desde cables hasta interruptores. Con productos
+                    duraderos, precios competitivos y un equipo amable y experto listo para ayudarte, ¡hacer tus
+                    proyectos realidad nunca ha sido tan fácil!</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let counter = 0;
+        const slideWidth = carousel.querySelector('img').clientWidth;
+
+        nextBtn.addEventListener('click', () => {
+            if (counter >= carousel.children.length - 1) return;
+            counter++;
+            carousel.style.transform = `translateX(${-slideWidth * counter}px)`;
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (counter <= 0) return;
+            counter--;
+            carousel.style.transform = `translateX(${-slideWidth * counter}px)`;
+        });
+    </script>
+
+    <footer>
+        <div class="container">
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="automotriz.html">Automotriz</a></li>
+                    <li><a href="acercade.html">Acerca de</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="privacidad.html">Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="aviso-privacidad">
+                <p>AVISO DE PRIVACIDAD | © euler 2024 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

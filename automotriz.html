@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotriz</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <link rel="icon" type="image/x-icon" href="images/IcoEuler.ico">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <img src="images/logoEuler-sinfondo.png" alt="logo">
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="automotriz.html">Automotriz</a>
+                <a href="ferreteria.html">Ferretería</a>
+                <a href="acercade.html">Acerca de</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="privacidad.html">Privacidad</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero-auto">
+        <h2>Comercializadora <span>e</span>uler</h2>
+        <p>Venta de autopartes y refacciones, mantenimiento y reparación,
+            trabajamos varias marcas de vehículos</p>
+
+        <h3><a href="https://wa.me/+573102757098?text=Hola,%20estoy%20interesado%20en%20tu%20producto/servicio"
+                target="_blank">Wa/Me</a></h3>
+
+        <p>Envíame un WhatsApp para citas y cotizaciones!</p>
+
+    </section>
+
+    <section id="automotriz">
+
+        <div class="container">
+            <div class="grid">
+                <legend>Chevy</legend>
+                <img src="images/ChevyLogo.jpg" alt="Chevy">
+
+
+                <legend>Hyundai</legend>
+                <img src="images/hyundaiLogo.png" alt="Hyundai">
+
+
+                <legend>Kia</legend>
+                <img src="images/kiaLogo.jpg" alt="Kia">
+
+
+                <legend>Renault</legend>
+                <img src="images/renaultLogo.jpg" alt="Renault">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicio-automotriz">
+        <div class="container-automotriz">
+            <div class="texto">
+                <h2>En <span>e</span>uler</h2>
+                <p>Nuestro enfoque principal consiste en asistir a nuestros clientes en la gestión efectiva del
+                    mantenimiento de sus automóviles. </p>
+                <h3>Motores a gasolina</h3>
+            </div>
+            <div class="imagenes">
+                <img src="images/RenaultClio.jpg" alt="Renault Clio 1">
+                <img src="images/RenaultClio2.jpg" alt="Renault Clio 2">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="refacciones">
+        <div class="refacciones-container">
+            <h2>Tenemos todo para tu automóvil</h2>
+            <div class="nuestras-refac">
+                <div class="cajas-auto">
+                    <img src="images/plumillas.jpeg" alt="Plumillas">
+                </div>
+                <div class="cajas-auto">
+                    <img src="images/filtros.jpeg" alt="Filtros">
+                </div>
+                <div class="cajas-auto">
+                    <img src="images/frenos.jpeg" alt="PastasFreno">
+                </div>
+                <div class="cajas-auto">
+                    <img src="images/baterias.jpeg" alt="Baterías">
+                </div>
+                <div class="cajas-auto">
+                    <img src="images/liquidofrenos.jpeg" alt="LiquidoFren">
+                </div>
+                <div class="cajas-auto">
+                    <img src="images/correas.jpeg" alt="Correas">
+                </div>
+                <div class="cajas-auto">
+                    <img src="images/lubricantes.jpeg" alt="Lubricantes">
+                </div>
+                <div class="cajas-auto">
+                    <img src="images/refrigerantes.jpeg" alt="Refrigerantes">
+                </div>
+                <div class="cajas-auto">
+                    <img src="images/clutches.jpeg" alt="Clutch ">
+                </div>
+                <div class="cajas-auto">
+                    <img src="images/amortiguadores.jpeg" alt="amortiguadores">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+            <div class="box-maps">
+                <a href="https://wa.me/+573102757098?text=Hola,%20estoy%20interesado%20en%20tu%20producto/servicio"
+                    target="_blank"><h1>Visítanos o agenda aquí!</h1></a>
+                
+                <h2>Euler Distribuidor de Autopartes</h2>
+            </div>
+       
+
+    <div id="map" style="height: 400px;"></div>
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="links">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="ferreteria.html">Ferretería</a></li>
+                    <li><a href="acercade.html">Acerca de</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="privacidad.html">Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="aviso-privacidad">
+                <p>AVISO DE PRIVACIDAD | © euler 2024 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Inicializa el mapa y asigna una ubicación y un nivel de zoom iniciales Cl. 63f #26-54
+        var map = L.map('map').setView([4.65595, -74.07342], 13);
+      
+        // Añade una capa base de OpenStreetMap al mapa
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+      
+        // Añade un marcador al mapa en una ubicación específica
+        L.marker([4.65595, -74.07342]).addTo(map)
+        .bindPopup('¡Hola! Estamos en: Cl. 63f #26-54');
+      </script>
+
+</body>
+
+</html>
